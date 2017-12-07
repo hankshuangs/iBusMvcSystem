@@ -2,30 +2,35 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+@Styles.Render("~/css/style")
+<div class="container">
+    <div class="header">
+        <img src="img/logo.png" class="logo" width="200" height="81" />
+        <!-- end .header -->
+    </div>
+    <div class="content">
+        <div class="login-area" align="center">
+            <p><h2>歡迎來到 ibus 員工專區</h2></p>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+            <div class="input" style="background-image:url(img/bg_account.png);">
+                <label>
+                    <input type="text" name="EmployeeNo" id="EmployeeNo" maxlength="10" class="input-field" placeholder="　員工編號" />
+                </label>
+            </div>
+            <div class="input" style="background-image:url(img/bg_password.png);">
+                <input type="password" name="Pwd" id="Pwd" maxlength="12" class="input-field" placeholder="　密　　碼" style="font:small-caption;" />
+            </div>
+            <div>
+                <input type="submit" name="check" value="登　　入" onClick="vbscript:checkdata()" class="btn" />
+                <input type="reset" name="cancel" value="重新填寫" onClick="vbscript:focusto()" class="btn" />
+            </div>
+            <div class="notice">
+                <ul>
+                    <li>性騷擾申訴專線：<a href="tel:07-3424281">(07)342-4281</a></li>
+                    <li>員工申訴、投訴、建議專線：<a href="tel:07-3424281">(07)342-4281</a></li>
+                </ul>
+            </div>
+            <div class="copyright">2014 &copy; ibus union All Rights Reserved.</div>
+        </div><!-- end .content -->
+    </div><!-- end .container -->
 </div>

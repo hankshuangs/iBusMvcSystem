@@ -1,0 +1,181 @@
+/*!
+ * ibus Admin theme v1.3.28
+ * Copyright 2014 
+ * Author: 0926@ECClub.tw
+ * http://www.ecclub.tw
+ *
+ */
+
+
+@font-face {
+	font-family: 'glyphicons halflings regular';
+	src: url('glyphicons_halflings_regular/glyphicons-halflings-regular.eot');
+	src: url('glyphicons_halflings_regular/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('glyphicons_halflings_regular/glyphicons-halflings-regular.woff') format('woff'),
+         url('glyphicons_halflings_regular/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('glyphicons_halflings_regular/glyphicons-halflings-regular.svg') format('svg');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: "微軟正黑體", glyphicons halflings regular;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+ul, ol, dl {
+	padding: 0px 10px 0px;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding-top: 5px;
+}
+
+a img {
+	border: none;
+}
+
+a:link {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #6E6C64;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	background-color: #FFF;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #d03238;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding: 5px 0px 5px;
+}
+
+.content {
+	padding: 10px 0;
+}
+
+.footer {
+	padding: 10px 0;
+	background-color: #CCC49F;
+}
+
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.logo {
+	padding: 5px 0px 5px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 500;
+	margin: 20px 0;
+
+}
+
+.login-area {
+	width: 350px;
+	height: 417px;
+	background-color: #bcbcbc;
+	margin: 0 auto;
+}
+
+.input {
+	width: 320px;
+	height: 42px;
+	margin: 5px 5px 20px 5px;
+}
+
+.input-field {
+	background-color: #ffffff;
+	border-color: #bcbcbc;
+	border-width:0px;
+	border-style:none;
+	font-size: 16px;
+	position: relative;
+	z-index: 999;
+	left: 23px;
+	width: 270px;
+	height: 37px;
+	line-height: 37px;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	background-color: #8e8e8e;
+	border: 1px #8e8e8e;
+	-webkit-border-top-right-radius:2px;
+	-moz-border-radius-topright:2px;
+	border-top-right-radius:2px;
+	-webkit-border-bottom-right-radius:2px;
+	font-family: '微軟正黑體';
+	font-size: 14px;
+	color: #ffffff;
+	padding-left: 1px;
+	padding-right: 6px;
+
+}
+
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: '微軟正黑體';
+  color: #ffffff;
+  font-size: 14px;
+  background: #ea3240;
+  padding: 10px 20px 10px 20px;
+  border: solid #ea3240 0px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #b7000d;
+  text-decoration: none;
+}
+
+.notice {
+	width: 350px;
+	height: 35px;
+	background-color: #8e8e8e;
+	margin: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
+	list-style-type:  disc;
+	list-style-position: inside;
+	text-align: left;
+}
+
+.copyright {
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+
